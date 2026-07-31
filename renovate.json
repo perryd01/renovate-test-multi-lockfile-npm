@@ -3,16 +3,7 @@
   "extends": [
     "config:recommended"
   ],
-  "packageRules": [
-    {
-        "matchManagers": ["yarn"],
-        "enabled": false
-    },
-    {
-        "matchManagers": ["bun"],
-        "enabled": true
-    }
-  ],
+  "enabledManagers": ["bun"],
   "lockFileMaintenance": {
     "enabled": true
   }
