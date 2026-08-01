@@ -6,5 +6,13 @@
   "enabledManagers": ["bun"],
   "lockFileMaintenance": {
     "enabled": true
+  },
+  "postUpgradeTasks": {
+    "commands": ["bun install"],
+    "fileFilters": ["**/yarn.lock"],
+    "executionMode": "update",
+    "installTools": {
+      "bun": {}
+    }
   }
 }
