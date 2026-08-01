@@ -3,16 +3,22 @@
   "extends": [
     "config:recommended"
   ],
-  "enabledManagers": ["bun"],
+  "enabledManagers": [
+    "bun"
+  ],
   "lockFileMaintenance": {
     "enabled": true
   },
   "postUpgradeTasks": {
-    "commands": ["bun install"],
-    "fileFilters": ["**/yarn.lock"],
-    "executionMode": "update",
-    "installTools": {
-      "bun": {}
-    }
+    "commands": [
+      "bun install"
+    ],
+    "fileFilters": [
+      "**/yarn.lock"
+    ],
+    "executionMode": "branch"
+  },
+  "constraints": {
+    "bun": "1.x"
   }
 }
