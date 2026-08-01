@@ -13,9 +13,6 @@
     "commands": [
       "bun install"
     ],
-    "fileFilters": [
-      "**/yarn.lock"
-    ],
     "executionMode": "branch"
   },
   "constraints": {
