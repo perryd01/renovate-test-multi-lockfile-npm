@@ -5,7 +5,7 @@
   "private": true,
   "devDependencies": {
     "@types/bun": "latest",
-    "renovate": "^44.5.0"
+    "renovate": "^45.0.0"
   },
   "peerDependencies": {
     "typescript": "5.9.1"
